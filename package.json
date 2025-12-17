@@ -1,5 +1,5 @@
 {
-  "name": "@connectaryal/react-rbac",
+  "name": "@connectaryal/rbac",
   "version": "1.0.0",
   "description": "A flexible Role-Based Access Control (RBAC) library",
   "main": "dist/index.js",
@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/connectaryal/react-rbac.git"
+    "url": "git+https://github.com/connectaryal/rbac.git"
   },
   "bugs": {
-    "url": "https://github.com/connectaryal/react-rbac/issues"
+    "url": "https://github.com/connectaryal/rbac/issues"
   },
-  "homepage": "https://github.com/connectaryal/react-rbac#readme",
+  "homepage": "https://github.com/connectaryal/rbac#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

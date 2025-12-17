@@ -1,15 +1,56 @@
 // src/index.ts
 //
-// #TODO: remove these example files and make this barrel file
+// Main barrel export file for @connectaryal/rbac
 
-import { RoleBasedAccessControl } from "./core/rbac";
-import { TConfig } from "./types/permission.types";
-export type AppPermissions = "read" | "write" | "delete" | "update";
+// Export the main RBAC class
+export { RoleBasedAccessControl } from "./core/rbac";
 
-const config: TConfig = {
-  permissions: ["read", "update"], // autocomplete works here
-};
+// Export all type definitions
+export type {
+  TPermission,
+  TRole,
+  TSector,
+  TPermissionSet,
+  TRoleSet,
+  TRoleDefinitions,
+  TSectorRestrictions,
+  TConfig,
+} from "./types/permission.types";
 
-const rbac = new RoleBasedAccessControl<AppPermissions>(config);
+// Export React integration (hooks, components, provider)
+export {
+  // Provider and context
+  RBACProvider,
+  useRBACContext,
+  withRBAC,
 
-console.log(rbac.can(["delete", "read", "update"], false));
+  // Hooks
+  usePermission,
+  useHasPermission,
+  useCanAny,
+  useCanAll,
+  useIsRestricted,
+
+  // Components
+  PermissionGate,
+  RestrictedContent,
+  PermissionSwitch,
+  Can,
+  Cannot,
+  PermissionBoundary,
+  PermissionDebug,
+} from "./react";
+
+// Export React types
+export type {
+  PermissionCheckType,
+  UsePermissionOptions,
+  UsePermissionResult,
+  PermissionGateProps,
+  RestrictedContentProps,
+  PermissionSwitchProps,
+  CanProps,
+  CannotProps,
+  PermissionBoundaryProps,
+  PermissionDebugProps,
+} from "./react";

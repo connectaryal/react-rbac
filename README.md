@@ -1,3 +1,3 @@
-# @connectaryal/react-rbac
+# @connectaryal/rbac
 
-> A flexible Role-Based Access Control (RBAC) library for React
+> A flexible Role-Based Access Control (RBAC) library
