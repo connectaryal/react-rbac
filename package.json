@@ -1,6 +1,6 @@
 {
   "name": "@connectaryal/rbac",
-  "version": "1.0.0-beta",
+  "version": "1.0.0-beta.1",
   "description": "A flexible Role-Based Access Control (RBAC) library",
   "main": "dist/index.js",
   "module": "dist/index.js",
