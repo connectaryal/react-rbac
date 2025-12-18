@@ -15,6 +15,8 @@ export type {
   TRoleDefinitions,
   TSectorRestrictions,
   TConfig,
+  TConfigWithRoleDefinitions,
+  TConfigWithoutRoleDefinitions,
 } from "./types/permission.types";
 
 // Export React integration (hooks, components, provider)

@@ -77,7 +77,9 @@ export function RBACProvider<
 
     // If config is provided, create new instance
     if (config) {
-      const rbac = new RoleBasedAccessControl<TRoleName, TPerm, TSectorName>(config);
+      const rbac = new RoleBasedAccessControl<TRoleName, TPerm, TSectorName>(
+        config,
+      );
       return {
         rbac,
         isInitialized: true,
@@ -118,7 +120,7 @@ export function useRBACContext<
   const context = useContext(RBACContext);
 
   if (!context) {
-    throw new Error('useRBACContext must be used within an RBACProvider');
+    throw new Error("useRBACContext must be used within an RBACProvider");
   }
 
   return context as RBACContextValue<TRoleName, TPerm, TSectorName>;
